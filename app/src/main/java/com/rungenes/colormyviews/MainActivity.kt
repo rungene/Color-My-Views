@@ -20,10 +20,13 @@ class MainActivity : AppCompatActivity() {
                                listOf(box_one_text,box_two_text,box_three_text,box_four_text,box_five_text,constrain_layout)
 
         for (item in clicableViews){
-            item.setOnClickListener {makeColored(it) }
+            item.setOnClickListener {makeColored(it)  }
+
 
         }
     }
+
+
 
     fun makeColored(view: View) {
         when (view.id) {
@@ -40,4 +43,6 @@ class MainActivity : AppCompatActivity() {
             else -> view.setBackgroundColor(Color.LTGRAY)
         }
     }
+
+
 }
